@@ -1,0 +1,38 @@
+form {
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50vw;
+    height: 600px;
+    background-color: #aaeaee;
+    padding: 50px;
+    box-shadow: 0 0 0.5em rgb(39, 51, 53);
+  }
+  
+  form input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid rgb(27, 25, 25);
+    outline: none;
+    font-size: 16px;
+    background-color: transparent;
+  }
+  
+  form button {
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid white;
+    box-shadow: 0 0 0.5em rgb(39, 51, 53);
+  }
+  
+  form button:hover{
+    background-color: white;
+    color: darkblue;
+    
+  }
+  
