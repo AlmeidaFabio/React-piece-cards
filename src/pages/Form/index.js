@@ -42,46 +42,48 @@ export default function Form() {
 
     return(
         <main>
-            <form onSubmit={post}>
-            <h3>Adicionar personagem</h3>
+            <section className="form">
+                <form onSubmit={post}>
+                    <h3>Adicionar personagem</h3>
 
-            <input type="text"
-                value={name}
-                onChange={e => setName(e.target.value)}
-                placeholder="Nome:"
-            />
+                    <input type="text"
+                        value={name}
+                        onChange={e => setName(e.target.value)}
+                        placeholder="Nome:"
+                    />
 
-            <input type="text"
-                value={title}
-                onChange={e => setTitle(e.target.value)}
-                placeholder="Titulo:"
-            />
+                    <input type="text"
+                        value={title}
+                        onChange={e => setTitle(e.target.value)}
+                        placeholder="Titulo:"
+                    />
 
-            <input type="text"
-                value={role}
-                onChange={e => setRole(e.target.value)}
-                placeholder="Função:"
-            />
+                    <input type="text"
+                        value={role}
+                        onChange={e => setRole(e.target.value)}
+                        placeholder="Função:"
+                    />
 
-            <textarea placeholder="Descrição:"
-                value={description}
-                onChange={e => setDescription(e.target.value)}
-            />
+                    <textarea placeholder="Descrição:"
+                        value={description}
+                        onChange={e => setDescription(e.target.value)}
+                    />
 
-            <input type="text"
-                value={category}
-                onChange={e => setCategory(e.target.value)}
-                placeholder="Categoria:"
-            />
+                    <input type="text"
+                        value={category}
+                        onChange={e => setCategory(e.target.value)}
+                        placeholder="Categoria:"
+                    />
 
-            <input type="text"
-                value={devilfruit}
-                onChange={e => setDevilfruit(e.target.value)}
-                placeholder="Akuma no mi:"
-            />
+                    <input type="text"
+                        value={devilfruit}
+                        onChange={e => setDevilfruit(e.target.value)}
+                        placeholder="Akuma no mi:"
+                    />
 
-            <button type="submit">Adicionar</button>
-        </form>
+                    <button type="submit">Adicionar</button>
+                </form>
+            </section>
         </main>
     )
 }
