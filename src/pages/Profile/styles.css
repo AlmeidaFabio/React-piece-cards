@@ -4,7 +4,7 @@
     min-height: calc(100vh - 200px);
     padding: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     background-color: #aaeaee;
@@ -65,16 +65,8 @@
     align-items: center;
 }
 
-.character-btn {
-    background-color: transparent;
-    color: rgb(8, 0, 0);
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 50px;
-    outline: none;
+.b:hover {
+    color: mediumseagreen;
 }
 
 .edit:hover {

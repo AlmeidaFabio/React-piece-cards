@@ -1,17 +1,19 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
-import './styles.css'
 
+import './styles.css'
+import logo from './icon1.png'
+import banner from './banner.png'
 
 export default function Header() {
     return (
-        <header className="menu">
-            <nav>
-                <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/character">Adicionar personagem</Link></li>
-                </ul>
-            </nav>
+        <header className="top">
+            <div className="logo">
+                <img src={logo} alt=""/>
+            </div>
+
+            <div className="banner">
+                <img src={banner} alt=""/>
+            </div>
         </header>
     )
 }

@@ -1,16 +1,18 @@
 import React, {useState, useEffect} from 'react'
 
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { FiArrowLeftCircle } from 'react-icons/fi'
 import './styles.css'
 
 import api from '../../services/api'
 
-export default function Show(props) {
+export default function ShowAdm(props) {
     const [character, setCharacter] = useState([])
 
     const id = props.match.params.id
-   
+    const history = useHistory()
+
+
     useEffect(() => {
         async function loadCharacter(id) {
             const res = await api.get(`/character/${id}`)
@@ -23,6 +25,14 @@ export default function Show(props) {
 
     }, [id])
 
+
+    async function deletechar(id) {
+        alert("Tem certeza que deseja excluir este personagem?")
+        
+        await api.delete(`/character/${id}`)
+
+        history.push('/')
+    }
 
     return (
         
@@ -49,10 +59,16 @@ export default function Show(props) {
                 </div> 
                 <div className="description">{character.description}</div> 
 
-                
+                <div className="actions">
+                    <Link to="#"><button className="btn edit">Editar</button></Link>
+
+                    <Link to="#"><button className="btn edit">adicionar imagem</button></Link>
+
+                    <button className="btn delete" onClick={() => deletechar(character._id)}>Excluir </button>
+                </div>     
 
                 <Link to="/">
-                    <FiArrowLeftCircle className="btn"/>
+                    <FiArrowLeftCircle className="btn b" />
                 </Link>
 
             </section>

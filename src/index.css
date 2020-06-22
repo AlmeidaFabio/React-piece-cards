@@ -22,8 +22,20 @@ body::-webkit-scrollbar {
 
 main {
   position: relative;
-  min-height: calc(100vh - 170px);
+  min-height: calc(100vh - 200px);
   margin-bottom: 30px;
+}
+
+.btn {
+  background-color: transparent;
+  color: rgb(8, 0, 0);
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 50px;
+  outline: none;
 }
 
 code {
