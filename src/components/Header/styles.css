@@ -1,6 +1,6 @@
 .top {
     width: 100%;
-    height: 120px;
+    height: 100px;
 
     display: flex;
     justify-content: space-around;
@@ -10,14 +10,14 @@
     box-shadow: 0 0 0.5em rgb(39, 51, 53);
 }
 .banner, .logo {
-    height: 100px;
+    height: 100%;
 }
 .banner img, .logo img {
-    height: 100px;
+    height: 100%;
 }
 
-@media screen and (max-width: 540px) {
-    .logo {
+@media screen and (max-width: 740px) {
+    .banner {
         display: none;
     }
     

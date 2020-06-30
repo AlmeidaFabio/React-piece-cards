@@ -6,11 +6,14 @@
     -ms-grid-columns: repeat(6, 1fr);
 
     grid-gap: 20px 0; 
-    padding-right: 10px;   
+    padding: 10px;   
     
     width: 100vw;
-    height: 100%;
+    min-height: calc(100vh - 295px);
     margin-bottom: 30px;
+
+    background-color: rgb(154, 213, 236);
+    box-shadow: 0 0 0.5em rgb(39, 51, 53);
 }
 
 .middle {
@@ -20,7 +23,6 @@
     transform: translate(-50%, -50%);
 
     position: -ms-page;
-
 } 
   
 .card{
@@ -36,6 +38,8 @@
     backface-visibility: hidden;
     position: absolute;
     transition: transform .6s linear;
+
+    box-shadow: 0 0 0.5em rgb(39, 51, 53);
 }
 .front img{
     height: 100%;
@@ -51,7 +55,7 @@
 .back-content{
     display: flex;
     flex-direction: column;
-    color: blueviolet;
+    color: rgb(177, 78, 12);
     text-align: center;
     width: 100%;
 }
@@ -80,6 +84,23 @@
 }
 .card:hover > .back {
     transform: perspective(600px) rotateY(0deg);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.pagination .bt {
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.pagination .bt:hover {
+    color: rgb(177, 78, 12);
 }
 
 @media screen and (max-width: 1720px) {

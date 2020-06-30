@@ -12,11 +12,11 @@ export default function Show(props) {
     const id = props.match.params.id
    
     useEffect(() => {
-        async function loadCharacter(id) {
+        async function loadCharacter() {
             const res = await api.get(`/character/${id}`)
 
             setCharacter(res.data)
-
+            console.log(res.data)
         }
 
             loadCharacter(id)
@@ -41,11 +41,13 @@ export default function Show(props) {
 
                         <div><strong>Akuma no mi:</strong> {character.devilfruit}</div>
                     </label>
-
-                    <div className="charImg">
-                    <img src={character.cover} alt={character.name}/>
-                </div>
-
+                    <div>{/*   
+                        <div className="charImg">
+                        <img src="{character.cover}" alt=""/>
+                    </div>
+                    */
+                    }</div>
+                    
                 </div> 
                 <div className="description">{character.description}</div> 
 

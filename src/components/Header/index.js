@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './styles.css'
-import logo from './icon1.png'
+import logo from './logo.png'
 import banner from './banner.png'
 
 export default function Header() {
