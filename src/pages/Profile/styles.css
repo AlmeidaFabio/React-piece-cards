@@ -1,21 +1,21 @@
 .profile{
-    width: 60%;
+    width: 50%;
     margin: auto;
-    min-height: calc(100vh - 240px);
+    min-height: calc(100vh - 180px);
     padding: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
     background-color: #aaeaee;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    font-size: 18px;
     box-shadow: 0 0 0.5em rgb(39, 51, 53);
 }
 
 .profile .char {
     width: 100%;
-    text-align: center;
-    margin-top: 10px;  
+    text-align: center; 
 }
 
 .profile .charImg {
@@ -29,35 +29,22 @@
     width: 100%;
     height: 100%;
 }
-
-.profile label {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 .profile .infoChar {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    width: 70%;
-    height: 150px;
+    width: 80%;
     padding: 30px;
-    margin-bottom: 10px;
 }
 
-.profile .infoChar label {
+.infoChar label {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: baseline;
-    padding: 5px;
-    margin-top: 5px;
+    justify-content: flex-start;
 }
 
 .profile .description {
-    margin-left: 25px;
+    width: 90%;
 }
 
 .profile a {
@@ -85,4 +72,31 @@
 .delete:hover {
     background-color: red;
     color: white;
+}
+
+
+@media screen and (max-width: 1310px) {
+    .profile {
+        width: 60%;
+    }
+}
+
+
+@media screen and (max-width: 1040px) {
+    .profile {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .profile {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+    .profile {
+        min-width: 360px;
+    }
 }

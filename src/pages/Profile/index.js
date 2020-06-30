@@ -16,7 +16,6 @@ export default function Show(props) {
             const res = await api.get(`/character/${id}`)
 
             setCharacter(res.data)
-            console.log(res.data)
         }
 
             loadCharacter(id)

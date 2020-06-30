@@ -2,10 +2,13 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 
     background-color: #aaeaee;
-    box-shadow: 0 0 0.5em rgb(39, 51, 53);
+    box-shadow: 0 0 0.5em rgb(39, 51, 53);    
+}
 
-    
+.copy {
+    font-size: 12px;
+    margin-right: 10px;
 }

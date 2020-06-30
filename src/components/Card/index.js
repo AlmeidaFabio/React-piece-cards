@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { FiSkipBack, FiSkipForward } from 'react-icons/fi'
+import { FiChevronsLeft, FiChevronsRight } from 'react-icons/fi'
 import api from '../../services/api'
 import './styles.css'
 
@@ -40,9 +40,8 @@ export default function Card() {
                 <div className="back">
                     <div className="back-content middle">
                         <h2>{character.name}</h2>
-                        <span>{character.title}</span>
+                        
                         <span>{character.category}</span>
-                        <span>Akuma no mi: {character.devilfruit}</span>
                         <div className="sm">
                             <Link to={`/character/${character._id}`}>+</Link>
                         </div>
@@ -52,9 +51,9 @@ export default function Card() {
             ))}   
         </section> 
         <div className="pagination">
-            <FiSkipBack className="bt" onClick={previousPage}>Previous</FiSkipBack>
-            Anterior - Próxima
-            <FiSkipForward className="bt" onClick={nextPage}>Next</FiSkipForward>
+            <FiChevronsLeft className="bt" onClick={previousPage}/>
+                Anterior - Próxima
+            <FiChevronsRight className="bt" onClick={nextPage}/>
         </div>
     </>    
     )

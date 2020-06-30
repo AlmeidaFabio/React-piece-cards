@@ -5,7 +5,7 @@ import './styles.css'
 export default function Footer() {
     return (
         <footer className="footer">
-            <div className="corp">
+            <div className="copy">
                 <p>@AlmeidaFabio - 2020</p>
             </div>
         </footer>
