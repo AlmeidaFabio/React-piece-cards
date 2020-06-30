@@ -6,7 +6,7 @@ import './styles.css'
 
 export default function Card() {
     const [characters, setCharacters] = useState([])
-    const [limit, setLimit] = useState(16)
+    const [limit] = useState(16)
     const [page, setPage] = useState(1)
 
 
