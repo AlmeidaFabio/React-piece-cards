@@ -4,15 +4,22 @@
 
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: center;
     background-color: #aaeaee;
     margin-bottom: 10px;
     box-shadow: 0 0 0.5em rgb(39, 51, 53);
 }
-.banner, .logo {
-    height: 100%;
+
+.banner {
+    height: 90px;
 }
-.banner img, .logo img {
+
+.logo {
+    color: rgb(248, 79, 12);
+    text-shadow: 0 0 0.5em rgb(250, 81, 3);
+}
+
+.banner img {
     height: 100%;
 }
 
