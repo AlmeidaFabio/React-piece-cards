@@ -3,17 +3,20 @@ import { Link } from 'react-router-dom'
 import { FiChevronsLeft, FiChevronsRight } from 'react-icons/fi'
 import api from '../../services/api'
 import './styles.css'
+import Loading from './loading'
 
 export default function Card() {
     const [characters, setCharacters] = useState([])
     const [limit] = useState(16)
     const [page, setPage] = useState(1)
+    const [isLoading, setIsLoading] = useState(true)
 
 
     async function loadCharacters(limit, page) {
         const res = await api.get(`/characters?limit=${limit}&page=${page}`)
         
         setCharacters(res.data.characters)
+        setIsLoading(false)
     }
 
     function nextPage() {
@@ -29,6 +32,9 @@ export default function Card() {
     },[limit, page])
     
     return(
+        <>
+        {isLoading ? <Loading className="loading"/> 
+        :
         <>
         <section className="card-component">
             {characters.map(character => (
@@ -50,11 +56,14 @@ export default function Card() {
             </div>
             ))}   
         </section> 
+        
         <div className="pagination">
             <FiChevronsLeft className="bt" onClick={previousPage}/>
                 Anterior - Próxima
             <FiChevronsRight className="bt" onClick={nextPage}/>
         </div>
+        </>
+        }
     </>    
     )
 }

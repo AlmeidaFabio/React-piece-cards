@@ -24,7 +24,7 @@ export default function AddImage(props) {
 
         localStorage.setItem('cover', res.data.url)
 
-        history.push('/')
+        history.push('/character')
     }
 
     return(
