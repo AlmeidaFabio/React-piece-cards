@@ -1,16 +1,16 @@
 .profile{
     width: 50%;
     margin: auto;
-    min-height: calc(100vh - 180px);
+    min-height: calc(100vh - 220px);
     padding: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    background-color: #aaeaee;
     margin-bottom: 10px;
     font-size: 18px;
     box-shadow: 0 0 0.5em rgb(39, 51, 53);
+    color: rgba(230, 216, 216, 0.863);
 }
 
 .profile .char {
@@ -47,12 +47,13 @@
     width: 90%;
 }
 
-.profile a {
+.profile a .btn{
+    color: rgba(230, 216, 216, 0.863);
     font-size: 26px;
 }
 
 .profile a .btn:hover {
-    color: red;
+    color: rgba(255, 102, 0, 0.561);
 }
 
 .actions {

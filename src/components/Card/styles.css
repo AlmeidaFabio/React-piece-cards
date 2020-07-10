@@ -5,15 +5,13 @@
     display: -ms-grid;
     -ms-grid-columns: repeat(6, 1fr);
 
-    grid-gap: 20px 0; 
-    padding: 10px;   
-    
+    grid-gap: 10px 0; 
+       
     width: 100vw;
     min-height: calc(100vh - 230px);
     margin-bottom: 10px;
 
-    background-color: rgb(154, 213, 236);
-    box-shadow: 0 0 0.5em rgb(39, 51, 53);
+    background-color: transparent;
 }
 
 .middle {
@@ -49,13 +47,13 @@
     transform: perspective(600px) rotateY(0deg);
 }
 .back {
-    background: #f1f1f1;
+    background: #203435df;
     transform: perspective(600px) rotateY(180deg);
 }
 .back-content{
     display: flex;
     flex-direction: column;
-    color: rgb(177, 78, 12);
+    color: rgba(223, 161, 120, 0.774);
     text-align: center;
     width: 100%;
 }
@@ -65,18 +63,19 @@
 .sm a {
     text-decoration: none;
     display: inline-flex;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     justify-content: center;
     align-items: center;
-    color: #2c3e50;
+    color: rgba(223, 161, 120, 0.774);
     font-size: 18px;
+    font-weight: bold;
     transition: 0.4s;
     border-radius: 50%;
     box-shadow: 0 0 0.5em rgb(39, 51, 53);
 }
 .sm a:hover{
-    background: rgb(177, 78, 12);
+    background: rgba(223, 161, 120, 0.774);
     color: white;
 }    
 .card:hover > .front {
@@ -91,6 +90,7 @@
     justify-content: center;
     align-items: center;
     margin: auto;
+    color: rgba(230, 216, 216, 0.863);
 }
 
 .pagination .bt {

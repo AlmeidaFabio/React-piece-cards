@@ -5,18 +5,19 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #aaeaee;
+    background-color: rgb(8, 67, 90);
     margin-bottom: 10px;
     box-shadow: 0 0 0.5em rgb(39, 51, 53);
+    border-bottom: 1px solid rgba(230, 216, 216, 0.863);
 }
 
 .logo {
-    color: rgba(255, 0, 0, 0.692);
+    color: rgba(230, 216, 216, 0.863);
     text-shadow: 0 0 0.5em rgb(146, 80, 59);
 }
 
 .banner {
-    height: 90px;
+    height: 100px;
 }
 
 .banner img {

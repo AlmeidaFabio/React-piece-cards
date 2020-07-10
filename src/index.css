@@ -10,7 +10,7 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: lightcyan;
+  background-color: rgb(8, 67, 90);
 
   position: relative;
   min-height: 100%;
@@ -22,8 +22,9 @@ body::-webkit-scrollbar {
 
 main {
   position: relative;
-  min-height: calc(100vh - 160px);
+  min-height: calc(100vh - 162px);
   margin-bottom: 10px;
+  border-bottom: 1px solid rgba(230, 216, 216, 0.863);
 }
 
 .btn {
