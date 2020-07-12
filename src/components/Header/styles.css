@@ -38,6 +38,7 @@
 
 @media screen and (max-width: 740px) {
     .top {
+        justify-content: space-between;
         flex-direction: column;
         margin-bottom: 20px;
     }

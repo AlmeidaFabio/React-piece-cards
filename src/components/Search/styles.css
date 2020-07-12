@@ -62,11 +62,12 @@
     .search-box {
         position: relative;
         top: 50%;
-        left: 60%;
-        transform: translate(-50%, -90%);
+        left: 100%;
+        transform: translate(-90%, -135%);
+        margin: 10px;
     }
     .search-box:hover > .search-txt{
-        width: 280px;
+        width: 240px;
         padding: 0 6px;
     }
 }
