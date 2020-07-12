@@ -16,7 +16,7 @@ export default function Routes() {
     return (
         <BrowserRouter>
             <Header/>
-            <Switch>
+            <Switch >
                 <Route exact path="/" component={Home}/>
 
                 <Route exact path="/character" component={Form}/>

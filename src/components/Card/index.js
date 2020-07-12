@@ -29,6 +29,7 @@ export default function Card() {
 
     useEffect(() => {
         loadCharacters(limit, page)
+        window.scrollTo(0,0)
     },[limit, page])
     
     return(
