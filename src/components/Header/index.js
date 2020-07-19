@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 import './styles.css'
 import banner from './banner.png'
@@ -12,7 +13,7 @@ export default function Header() {
             </div>
             
             <div className="logo">
-                <h1>OnePieceCards</h1>
+                <Link to="/"><h1>OnePieceCards</h1></Link>
             </div>
             
             <div className="search-area">

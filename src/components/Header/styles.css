@@ -12,8 +12,12 @@
 }
 
 .logo {
-    color: rgba(230, 216, 216, 0.863);
     text-shadow: 0 0 0.5em rgb(146, 80, 59);
+}
+
+.logo a {
+    text-decoration: none;
+    color: rgba(230, 216, 216, 0.863);
 }
 
 .banner {

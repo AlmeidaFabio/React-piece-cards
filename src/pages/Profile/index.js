@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 
-import { Link } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import { FiArrowLeftCircle } from 'react-icons/fi'
 import './styles.css'
 
@@ -8,6 +8,7 @@ import api from '../../services/api'
 
 export default function Show(props) {
     const [character, setCharacter] = useState([])
+    const history = useHistory()
 
     const id = props.match.params.id
    
@@ -21,7 +22,6 @@ export default function Show(props) {
             loadCharacter(id)
 
     }, [id])
-
 
     return (
         
@@ -50,12 +50,9 @@ export default function Show(props) {
                 </div> 
                 <div className="description">{character.description}</div> 
 
+                           
+                <FiArrowLeftCircle className="btn" onClick={() => history.goBack(-1)}/>
                 
-
-                <Link to="/">
-                    <FiArrowLeftCircle className="btn"/>
-                </Link>
-
             </section>
             
        </main>
