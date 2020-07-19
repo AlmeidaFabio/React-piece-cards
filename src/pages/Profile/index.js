@@ -20,6 +20,7 @@ export default function Show(props) {
         }
 
             loadCharacter(id)
+            window.scrollTo(0,0)
 
     }, [id])
 
